@@ -6,7 +6,7 @@ metadata:
   namespace: my-web
 spec:
   rules:
-  - host: myweb.home.lan
+  - host: myweb.natapat.me
     http:
       paths:
       - backend:
