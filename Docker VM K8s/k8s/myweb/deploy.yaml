@@ -32,14 +32,10 @@ spec:
 
       volumes:
       - name: hostpath-volume
-        hostPath:
-          path: /home/oom/k8s/myweb/html
-          type: Directory
+        emptyDir: {}
       - name: configmap-volume
         configMap:
           name: myweb-configmap
       - name: secret-volume
         secret:
           secretName: myweb-secret
-
-status: {}
